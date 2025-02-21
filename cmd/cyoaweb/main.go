@@ -15,7 +15,7 @@ import (
 func main() {
 	// Create flags for our optional variables
 	port := flag.Int("port", 3000, "the port to start the CYOA web application on")
-	filename := flag.String("file", "gopher.json", "the JSON file with the CYOA story")
+	filename := flag.String("file", "defaultStory.json", "the JSON file with the CYOA story")
 	flag.Parse()
 	fmt.Printf("Using the story in %s.\n", *filename)
 
